@@ -64,11 +64,12 @@ const string KEmptyLine (KSizeLine, KEmpty);  // Une ligne vide de la matrice
 
 const unsigned KRatioMeInvaders = 4;    // Nombre de fois où c'est le tour du joueur pour un tour de l'envahisseur
 
-nsGraphics::Vec2D enemyPos (20,20);
-nsGraphics::Vec2D rectPos (450,850);
-nsShape::Rectangle enemy(enemyPos, enemyPos + nsGraphics::Vec2D(120, 120), nsGraphics::KRed);
-nsShape::Rectangle ship(rectPos, rectPos + nsGraphics::Vec2D(100, 100), nsGraphics::KBlue);
+nsShape::Rectangle ship(nsGraphics::Vec2D(20, 20), nsGraphics::Vec2D(100, 100), nsGraphics::KBlue);
 const nsShape::Rectangle torpedo(nsGraphics::Vec2D(20, 20), nsGraphics::Vec2D(120, 120), nsGraphics::KGreen);
+const unsigned decal = 80;
+const int missileThickness = 6;
+const int missileLength = 25;
+const int squareSize = 50;
 
 struct pos {
         size_t numLigne;
