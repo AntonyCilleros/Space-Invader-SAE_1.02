@@ -70,6 +70,9 @@ const unsigned decal = 80;
 const int missileThickness = 6;
 const int missileLength = 25;
 const int squareSize = 50;
+const vector<nsGraphics::RGBAcolor> invaderColor{nsGraphics::KRed,nsGraphics::KGreen,nsGraphics::KGreen,nsGraphics::KBlue,nsGraphics::KBlue}; // Couleurs par ligne des invaders
+const vector<unsigned> cptAllDifficultyPlayerLife{0,3,1,1}; // Impose le nombre de vie au joueur selon le choixDifficulte dans main.cpp
+//const vector<unsigned> cptMaxInvaderMissile{0,5,10,20}; // Impose le nombre max de missile invader à l'écran selon le choixDifficulte dans main.cpp
 
 struct pos {
         size_t numLigne;
